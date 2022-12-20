@@ -2,21 +2,32 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "description": "my first project",
-  "main": "index.js",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-    "type": "module",
+    "type": "git",
     "url": "git+https://github.com/anewauroraeva/frontend-project-44.git"
   },
-  "bin": {
-    "brain-games": "bin/brain-games.js"
-  },
-  "author": "",
+  "author": "Eugenia K",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/anewauroraeva/frontend-project-44/issues"
   },
-  "homepage": "https://github.com/anewauroraeva/frontend-project-44#readme"
+  "type": "module",
+  "homepage": "https://github.com/anewauroraeva/frontend-project-44#readme",
+  "dependencies": {
+    "eslint-config-airbnb": "^19.0.4",
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "eslint": "^8.30.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.6.0",
+    "eslint-plugin-promise": "^6.1.1"
+  }
 }

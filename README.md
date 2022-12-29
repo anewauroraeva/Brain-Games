@@ -4,4 +4,5 @@
 <a href="https://codeclimate.com/github/anewauroraeva/frontend-project-44/maintainability"><img 
 src="https://api.codeclimate.com/v1/badges/d47c876838bb017133af/maintainability" /></a>
 
-https://asciinema.org/a/zdHPSV7Gu473L1rXGaxDUCrol 
+Is this number even? https://asciinema.org/a/548198
+Calculate this https://asciinema.org/a/548556

@@ -5,7 +5,7 @@ const rule = 'What is the result of the expression?';
 
 const calcGame = () => {
   const firstOperand = getRandomValue(1, 25);
-  const secondOperand = getRandomValue(1, 5);
+  const secondOperand = getRandomValue(1, 10);
   const operatorsArray = ['+', '-', '*'];
   const getRandomOperator = operatorsArray[Math.floor(Math.random() * operatorsArray.length)];
   const question = `${firstOperand} ${getRandomOperator} ${secondOperand}`;
@@ -22,10 +22,11 @@ const calcGame = () => {
     }
   };
   const rightAnswer = neededAnswer(firstOperand, getRandomOperator, secondOperand).toString();
-
-  gameLogic(rule, question, rightAnswer);
+  return [question, rightAnswer];
 };
 
-calcGame();
+const runCalcGame = () => {
+  gameLogic(rule, calcGame);
+};
 
-export default calcGame;
+export default runCalcGame;

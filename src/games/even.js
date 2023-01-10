@@ -8,10 +8,11 @@ const evenGame = () => {
   const questionValue = getRandomValue(1, 50);
   const question = `${questionValue}`;
   const rightAnswer = (isEven(questionValue) === true ? 'yes' : 'no');
-
-  gameLogic(rule, question, rightAnswer);
+  return [question, rightAnswer];
 };
 
-evenGame();
+const runEvenGame = () => {
+  gameLogic(rule, evenGame);
+};
 
-export default evenGame;
+export default runEvenGame;

@@ -6,3 +6,4 @@ src="https://api.codeclimate.com/v1/badges/d47c876838bb017133af/maintainability"
 
 Is this number even? https://asciinema.org/a/548198
 Calculate this https://asciinema.org/a/548556
+Greatest Common Divisor https://asciinema.org/a/551026

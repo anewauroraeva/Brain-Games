@@ -17,7 +17,7 @@ const progressionGame = () => {
   const stepOfProgression = getRandomValue(3, 10);
   const lengthOfProgression = getRandomValue(6, 11);
   const progression = getProgressionArray(startNum, stepOfProgression, lengthOfProgression);
-  const randomIndex = getRandomValue(0, lengthOfProgression);
+  const randomIndex = getRandomValue(0, lengthOfProgression - 1);
   const neededAnswer = progression[randomIndex];
   const rightAnswer = neededAnswer.toString();
   progression.splice(randomIndex, 1, '..');

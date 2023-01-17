@@ -11,3 +11,5 @@ Calculate This https://asciinema.org/a/548556
 Greatest Common Divisor https://asciinema.org/a/551026
 
 Progression https://asciinema.org/a/552091
+
+Is This Number Prime? https://asciinema.org/a/552301

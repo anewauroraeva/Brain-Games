@@ -12,7 +12,7 @@ const isPrime = (questionValue) => {
   return true;
 };
 
-const primeGame = () => {
+const generatePrimeGame = () => {
   const questionValue = getRandomValue(3, 100);
   const question = `${questionValue}`;
   const rightAnswer = (isPrime(questionValue) === true ? 'yes' : 'no');
@@ -20,7 +20,7 @@ const primeGame = () => {
 };
 
 const runPrimeGame = () => {
-  gameLogic(rule, primeGame);
+  gameLogic(rule, generatePrimeGame);
 };
 
 export default runPrimeGame;

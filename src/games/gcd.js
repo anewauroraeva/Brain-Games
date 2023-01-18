@@ -3,7 +3,7 @@ import getRandomValue from '../getRandomValue.js';
 
 const rule = 'Find the greatest common divisor of given numbers.';
 
-const gcdGame = () => {
+const generateGcdGame = () => {
   let firstNumber = getRandomValue(1, 100);
   let secondNumber = getRandomValue(1, 100);
   const question = `${firstNumber} ${secondNumber}`;
@@ -20,7 +20,7 @@ const gcdGame = () => {
 };
 
 const runGcdGame = () => {
-  gameLogic(rule, gcdGame);
+  gameLogic(rule, generateGcdGame);
 };
 
 export default runGcdGame;

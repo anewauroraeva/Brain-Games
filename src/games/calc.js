@@ -3,7 +3,7 @@ import getRandomValue from '../getRandomValue.js';
 
 const rule = 'What is the result of the expression?';
 
-const calcGame = () => {
+const generateCalcGame = () => {
   const firstOperand = getRandomValue(1, 25);
   const secondOperand = getRandomValue(1, 10);
   const operatorsArray = ['+', '-', '*'];
@@ -26,7 +26,7 @@ const calcGame = () => {
 };
 
 const runCalcGame = () => {
-  gameLogic(rule, calcGame);
+  gameLogic(rule, generateCalcGame);
 };
 
 export default runCalcGame;

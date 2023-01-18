@@ -12,7 +12,7 @@ const getProgressionArray = (startNum, stepOfProgression, lengthOfProgression) =
   return progressionArray;
 };
 
-const progressionGame = () => {
+const generateProgressionGame = () => {
   const startNum = getRandomValue(1, 200);
   const stepOfProgression = getRandomValue(3, 10);
   const lengthOfProgression = getRandomValue(6, 11);
@@ -26,7 +26,7 @@ const progressionGame = () => {
 };
 
 const runProgressionGame = () => {
-  gameLogic(rule, progressionGame);
+  gameLogic(rule, generateProgressionGame);
 };
 
 export default runProgressionGame;

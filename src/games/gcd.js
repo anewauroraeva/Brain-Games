@@ -8,26 +8,12 @@ const gcdGame = () => {
   let secondNumber = getRandomValue(1, 100);
   const question = `${firstNumber} ${secondNumber}`;
   const neededAnswer = () => {
-    if (firstNumber > secondNumber) {
-      if (firstNumber % secondNumber === 0) {
-        return secondNumber;
-      }
-      while (firstNumber) {
-        const neutralVar = firstNumber;
-        firstNumber = secondNumber % firstNumber;
-        secondNumber = neutralVar;
-      }
-      return secondNumber;
+    while (firstNumber) {
+      const neutralVar = firstNumber;
+      firstNumber = secondNumber % firstNumber;
+      secondNumber = neutralVar;
     }
-    if (secondNumber % firstNumber === 0) {
-      return firstNumber;
-    }
-    while (secondNumber) {
-      const neutralVar = secondNumber;
-      secondNumber = firstNumber % secondNumber;
-      firstNumber = neutralVar;
-    }
-    return firstNumber;
+    return secondNumber;
   };
   const rightAnswer = neededAnswer(firstNumber, secondNumber).toString();
   return [question, rightAnswer];

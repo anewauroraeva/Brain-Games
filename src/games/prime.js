@@ -15,7 +15,7 @@ const isPrime = (questionValue) => {
 const generatePrimeGame = () => {
   const questionValue = getRandomValue(3, 100);
   const question = `${questionValue}`;
-  const rightAnswer = (isPrime(questionValue) === true ? 'yes' : 'no');
+  const rightAnswer = (isPrime(questionValue) ? 'yes' : 'no');
   return [question, rightAnswer];
 };
 

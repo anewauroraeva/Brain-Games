@@ -4,12 +4,12 @@ import getRandomValue from '../getRandomValue.js';
 const rule = 'What number is missing in the progression?';
 
 const getProgressionArray = (startNum, stepOfProgression, lengthOfProgression) => {
-  const progressionArray = [];
+  const progression = [];
   for (let i = 0; i < lengthOfProgression; i += 1) {
     const nextNum = startNum + i * stepOfProgression;
-    progressionArray.push(nextNum);
+    progression.push(nextNum);
   }
-  return progressionArray;
+  return progression;
 };
 
 const generateProgressionGame = () => {

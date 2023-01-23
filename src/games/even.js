@@ -7,7 +7,7 @@ const isEven = (questionValue) => questionValue % 2 === 0;
 const generateEvenGame = () => {
   const questionValue = getRandomValue(1, 100);
   const question = `${questionValue}`;
-  const rightAnswer = (isEven(questionValue) === true ? 'yes' : 'no');
+  const rightAnswer = (isEven(questionValue) ? 'yes' : 'no');
   return [question, rightAnswer];
 };
 

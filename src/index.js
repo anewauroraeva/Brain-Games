@@ -5,7 +5,8 @@ const gameLogic = (rule, callback) => {
   const playerName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${playerName}!`);
   console.log(rule);
-  for (let i = 0; i < 3; i += 1) {
+  const roundCount = 3;
+  for (let i = 0; i < roundCount; i += 1) {
     const [question, rightAnswer] = callback();
     console.log(`Question: ${question}`);
     const playerAnswer = readlineSync.question('Your answer: ');

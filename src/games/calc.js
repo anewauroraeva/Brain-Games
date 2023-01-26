@@ -20,7 +20,7 @@ const generateCalcGame = () => {
   const firstOperand = getRandomValue(1, 25);
   const secondOperand = getRandomValue(1, 10);
   const operators = ['+', '-', '*'];
-  const randomOperator = operators[Math.floor(Math.random() * operators.length)];
+  const randomOperator = operators[getRandomValue(0, operators.length - 1)];
   const question = `${firstOperand} ${randomOperator} ${secondOperand}`;
   const rightAnswer = getRightAnswer(firstOperand, randomOperator, secondOperand).toString();
   return [question, rightAnswer];

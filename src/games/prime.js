@@ -4,6 +4,9 @@ import getRandomValue from '../getRandomValue.js';
 const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (questionValue) => {
+  if (questionValue <= 1) {
+    return false;
+  }
   for (let i = 2; i <= Math.sqrt(questionValue); i += 1) {
     if (questionValue % i === 0) {
       return false;

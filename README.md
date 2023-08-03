@@ -25,7 +25,7 @@ Brain Games is a set of five console arithmetic games. Each game require answers
 - Node.js v13 or higher
 
 ## Installation:
-1. Clone the repository https://github.com/anewauroraeva/frontend-project-44
+1. Clone the repository https://github.com/anewauroraeva/Brain-Games
 2. Go to repository directory `cd frontend-project-44`
 3. Install dependencies `make install`
 4. Install the package `npm link`
